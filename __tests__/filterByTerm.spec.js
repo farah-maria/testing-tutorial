@@ -11,5 +11,7 @@ describe("Filter function", () => {
         const output = [{ id: 3, url: "https://www.link3.dev" }]; // defining the output we should expect
 
         expect(filterByTerm(input, "link")).toEqual(output); // test
+
+        expect(filterByTerm(input, "LINK")).toEqual(output); // new test
     });
 });
